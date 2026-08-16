@@ -1,255 +1,79 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Химийн тест</title>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    background:#f2f2f2;
-    padding:20px;
-}
-
-.quiz{
-    max-width:700px;
-    margin:auto;
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-h1{
-    text-align:center;
-}
-
-.question{
-    margin-top:25px;
-    padding:15px;
-    background:#fafafa;
-    border-radius:10px;
-}
-
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    border-radius:10px;
-    background:#4CAF50;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-}
-
-button:hover{
-    opacity:0.9;
-}
-
-#result{
-    margin-top:25px;
-    font-size:22px;
-    font-weight:bold;
-    text-align:center;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blox Fruits-ийн #001–#211 Titles tracker">
+  <title>Blox Fruits Title Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <main>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
 
-<div class="quiz">
-    <h1>Химийн тест</h1>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Title Tracker эхлэл">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>BLOX</strong><small>TITLE TRACKER</small></span>
+      </a>
+      <div class="top-progress" aria-label="Нийт ахиц"><span id="topCount">0/211</span><div><i id="topBar"></i></div></div>
+    </header>
 
-    <!-- Question 1 -->
-    <div class="question">
-        <h3>1. Цэгийн оронд тохирох үгийг сонгоорой.</h3>
-
-        <p>
-        Бодис шингэн төлөвөөс хатуу төлөв рүү шилжихэд жижиг хэсгийн
-        кинетик энерги ......(X), жижиг хэсгийн хоорондын зай ........(Y) болно.
-        </p>
-
-        <label><input type="radio" name="q1" value="A"> A. багасаж — холдоно</label><br>
-        <label><input type="radio" name="q1" value="B"> B. багасаж — ойртоно</label><br>
-        <label><input type="radio" name="q1" value="C"> C. ихсэж — холдоно</label><br>
-        <label><input type="radio" name="q1" value="D"> D. ихсэж — ойртоно</label>
-    </div>
-
-    <!-- Question 2 -->
-    <div class="question">
-        <h3>2. Аль тохиолдолд диффузийн хурд буурах вэ?</h3>
-
-        <label><input type="radio" name="q2" value="A">
-        A. Халуун усанд хүнсний будаг дусаах</label><br>
-
-        <label><input type="radio" name="q2" value="B">
-        B. Жижиг хэсгийн хэмжээ багасах</label><br>
-
-        <label><input type="radio" name="q2" value="C">
-        C. Орчны температурыг ихэсгэх</label><br>
-
-        <label><input type="radio" name="q2" value="D">
-        D. Жижиг хэсгийн масс ихсэхэд</label>
-    </div>
-
-    <div class="question">
-        <h3>3. Атомын бүтцэд үндэслэн атомын масс ба элементийг зөв илэрхийлсэн эгнээг олоорой</h3>
-        <img src="https://i.imgur.com/VpFQAtt.jpeg" width="100px">
-
-        <label><input type="radio" name="q3" value="A">
-
-        A. Атомын масс = 14 Элемент = Азот</label><br>
-
-        <label><input type="radio" name="q3" value="B">
-        B. Атомын масс = 14 Элемент = Цахиур</label><br>
-
-        <label><input type="radio" name="q3" value="C">
-        C. Атомын масс = 28 Элемент = Азот </label><br>
-
-        <label><input type="radio" name="q3" value="D">
-        D. Атомын масс = 28 Элемент = Цахиур</label>
-    </div>
-    <div class="question">
-        <img src="https://i.imgur.com/lFgaetg.jpeg" width="100%">
-        <label><input type="radio" name="q4" value="A">
-        A</label><br>
-
-        <label><input type="radio" name="q4" value="B">
-        B</label><br>
-
-        <label><input type="radio" name="q4" value="C">
-        C</label><br>
-
-        <label><input type="radio" name="q4" value="D">
-        D</label>
-    </div>
-    <div class="question">
-        <h3>5. Үелэх системийн 1-р бүлгийн элементүүдийн хайлах болон буцлах температурыг хүснэгтэд харуулжээ. </h3>
-        <img src="https://i.imgur.com/rX0pXkr.jpeg" width="100%">
-        <p>800 °C температурт аль хоёр элемент нь шингэн байдалтай байхыг баримжаална уу.</p>
-        
-        <label><input type="radio" name="q5" value="A">
-        A.цези ба рубиди</label><br>
-
-        <label><input type="radio" name="q5" value="B">
-        B.кали ба натри</label><br>
-
-        <label><input type="radio" name="q5" value="C">
-        C.лити ба натри</label><br>
-
-        <label><input type="radio" name="q5" value="D">
-        D.кали ба цези</label>
-    </div>
-    <div class="question">
-        <h3>6. Металл + Хүчил → Давс + Устөрөгч схемд тохирох урвалын төрлийг сонгоно уу</h3>
-        
-        <label><input type="radio" name="q6" value="A">
-        A.Нэгдэх урвал </label><br>
-
-        <label><input type="radio" name="q6" value="B">
-        B.Саармагжих урвал </label><br>
-
-        <label><input type="radio" name="q6" value="C">
-        C.Халах урвал</label><br>
-
-        <label><input type="radio" name="q6" value="D">
-        D.Шатах урвал</label>
-        
-    </div>
-    <div class="question">
-        <p>7. Na<sub>2</sub>CO<sub>3</sub>(уус) + 2HCl(уус) → 2NaCl(уус) + H<sub>2</sub>O(ш) + X<sub>2</sub>(х)↑  Урвалаар үүссэн Х хийг аль аргаар таних вэ?</p>
-        <img src="https://i.imgur.com/E6SHq25.jpeg" width="100%">
-        <label><input type="radio" name="q7" value="A">
-        A</label><br>
-
-        <label><input type="radio" name="q7" value="B">
-        B</label><br>
-
-        <label><input type="radio" name="q7" value="C">
-        C</label><br>
-
-        <label><input type="radio" name="q7" value="D">
-        D</label>
-        
-    </div>
-     <div class="question">
-        <h3>8. Дараах мэдээлэлтэй танилцаж даалгаврыг гүйцэтгэнэ үү. </h3>
-        
-        <div style="border: 1px solid black; border-radius: 15px;">
-            <p>Дэлхий дээр хангалттай их ус байдаг боловч түүний зөвхөн 3%-ийг цэвэр ус эзэлдэг. Үлдсэн 97%-ийг давс агуулсан, унданд тохиромжгүй далай, тэнгисийн ус эзэлдэг.
-            Бид ахуй амьдралдаа усны бохирдол багатай гүний болон гадаргын усыг хэрэглэдэг. Энэхүү ус нь бичил биетэн, ууссан болон уусаагүй бодис зэргийг агуулсан байх боломжтой. Иймээс усыг
-            хэрэглэгчдэд буюу бидэнд хүргэхийн өмнө цэвэршүүлэх шаардлагатай болдог. Үүний тулд усыг шүүж, хлоржуулж ариутгадаг.
-            </p>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span>BLOX FRUITS COLLECTION</p>
+        <h1>Title бүрээ<br><em>цуглуул.</em></h1>
+        <p class="hero-description">#001–#211 Title-ийн нөхцөлийг харж, авсан бүрээ тэмдэглэ. Ахиц чинь энэ төхөөрөмж дээр автоматаар хадгалагдана.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#collection">Цуглуулгаа нээх <span>↓</span></a>
+          <button class="ghost-button" id="todoShortcut">Аваагүйгээ харах</button>
         </div>
+      </div>
+      <div class="progress-orbit" aria-label="Нийт ахиц">
+        <div class="orbit-ring orbit-ring-one"></div><div class="orbit-ring orbit-ring-two"></div>
+        <div class="progress-circle" id="progressCircle"><div><span><b id="progressPercent">0</b><sup>%</sup></span><small>ДУУССАН</small></div></div>
+        <span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span>
+      </div>
+    </section>
 
-        <img src="https://i.imgur.com/X1vBF7D.jpeg" width="100%">
+    <section class="stats-strip" aria-label="Title статистик">
+      <article><span class="stat-icon cyan">✓</span><div><strong id="doneCount">0</strong><small>АВСАН</small></div></article>
+      <article><span class="stat-icon violet">○</span><div><strong id="leftCount">211</strong><small>ҮЛДСЭН</small></div></article>
+      <article><span class="stat-icon gold">◆</span><div><strong id="bestColor">White</strong><small>ШИЛДЭГ ӨНГӨ</small></div></article>
+      <article><span class="stat-icon coral">→</span><div><strong id="nextAmount">10</strong><small id="nextColor">SPANISH PINK ХҮРТЭЛ</small></div></article>
+    </section>
 
-        <label><input type="radio" name="q8" value="A">
-        A. Усыг навч, хатуу хөвдөс, үлдэгдлээс салгахын тулд энэ шүүлтүүрээр шүүнэ.</label><br>
+    <section class="collection" id="collection">
+      <div class="section-heading"><div><p class="eyebrow"><span></span>YOUR COLLECTION</p><h2>Бүх Titles</h2></div><p><b id="visibleCount">211</b> title харагдаж байна</p></div>
+      <div class="controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" placeholder="Нэр, дугаар, нөхцөлөөр хайх..." aria-label="Title хайх"><kbd>/</kbd></label>
+        <div class="segmented" aria-label="Ахицаар шүүх">
+          <button class="active" data-view="all">Бүгд</button><button data-view="todo">Аваагүй</button><button data-view="done">Авсан</button>
+        </div>
+        <select id="statusFilter" aria-label="Боломжийн төлвөөр шүүх">
+          <option value="all">Бүх төлөв</option><option value="available">Боломжтой</option><option value="rare">Ховор</option><option value="limited">Event</option><option value="unavailable">Боломжгүй</option><option value="upcoming">Coming soon</option>
+        </select>
+      </div>
+      <nav class="category-row" id="categoryRow" aria-label="Title ангиллууд"></nav>
+      <div class="title-grid" id="titleGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Title олдсонгүй</h3><p>Хайлт эсвэл filter-ээ өөрчлөөд үзээрэй.</p><button id="clearFilters">Filter цэвэрлэх</button></div>
+    </section>
 
-        <label><input type="radio" name="q8" value="B">
-        B. Усыг тунадасжуулагч саванд байлгаж, хатуу жижиг хэсгүүдийг тунгаана.</label><br>
+    <section class="color-section">
+      <div class="section-heading"><div><p class="eyebrow"><span></span>TITLE COLORS</p><h2>Өнгөний ахиц</h2></div><p>Нийт авсан Title-ийн тоогоор нээгдэнэ</p></div>
+      <div class="color-track" id="colorTrack"></div>
+    </section>
 
-        <label><input type="radio" name="q8" value="C">
-        C. Усан дахь маш нарийн ширхэгтэй шаврын жижиг хэсгийг хөнгөнцагааны сульфат нэмэн тунадасжуулдаг.</label><br>
+    <footer class="footer">
+      <div><span class="brand-mark mini" aria-hidden="true"><i></i><i></i><i></i></span><p><b>Blox Fruits Title Tracker</b><small>Progress нь зөвхөн энэ browser-т хадгалагдана.</small></p></div>
+      <button id="resetButton" disabled>Бүх progress арилгах</button>
+    </footer>
 
-        <label><input type="radio" name="q8" value="D">
-        D. Өмнөх шатуудад шүүгдэлгүй үлдсэн хөвдсийг шүүнэ. </label>
-        
+    <div class="modal-backdrop" id="resetModal" role="presentation" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="resetTitle"><span>!</span><h2 id="resetTitle">Progress арилгах уу?</h2><p id="resetMessage"></p><div><button class="ghost-button" id="cancelReset">Болих</button><button class="danger-button" id="confirmReset">Тийм, арилгах</button></div></div>
     </div>
-
-
-
-    <button onclick="checkAnswers()">Шалгах</button>
-
-    <div id="result"></div>
-</div>
-
-<script>
-function checkAnswers(){
-
-    let score = 0;
-
-    let q1 = document.querySelector('input[name="q1"]:checked');
-    let q2 = document.querySelector('input[name="q2"]:checked');
-    let q3 = document.querySelector('input[name="q3"]:checked');
-    let q4 = document.querySelector('input[name="q4"]:checked');
-    let q5 = document.querySelector('input[name="q5"]:checked');
-    let q6 = document.querySelector('input[name="q6"]:checked');
-    let q7 = document.querySelector('input[name="q7"]:checked');
-    let q8 = document.querySelector('input[name="q8"]:checked');
-
-    // Correct answers
-    if(q1 && q1.value === "B"){
-        score++;
-    }
-
-    if(q2 && q2.value === "D"){
-        score++;
-    }
-    if(q3 && q3.value === "D"){
-        score++;
-    }
-    if(q4 && q4.value === "B"){
-        score++;
-    }
-    if(q5 && q5.value === "C"){
-        score++;
-    }
-    if(q6 && q6.value === "C"){
-        score++;
-    }
-    if(q7 && q7.value === "C"){
-        score++;
-    }
-    if(q8 && q8.value === "D"){
-        score++;
-    }
-
-    document.getElementById("result").innerHTML =
-        "Таны оноо: " + score + "/8";
-}
-</script>
-
+  </main>
 </body>
 </html>
